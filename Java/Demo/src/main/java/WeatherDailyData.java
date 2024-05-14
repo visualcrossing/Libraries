@@ -1,6 +1,7 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 /**
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  * description,icon, stations, and source for a specific date.
  */
 public class WeatherDailyData {
-    private String datetime;
+    private LocalDate datetime;
     private Long datetimeEpoch;
     private Double tempmax;
     private Double tempmin;
@@ -46,6 +47,8 @@ public class WeatherDailyData {
     private String icon;
     private ArrayList<String> stations;
     private String source;
+    private ArrayList<Event> events;
+
 
     private ArrayList<WeatherHourlyData> weatherHourlyData;
 
@@ -123,9 +126,14 @@ public class WeatherDailyData {
         return weatherHourlyData;
     }
 
-    public String getDatetime() { return datetime; }
+    public LocalDate getDatetime() { return datetime; }
 
-    public void setDatetime(String datetime) { this.datetime = datetime; }
+    public void setDatetime(String datetime) {
+        if (datetime == null)
+            this.datetime = null;
+        else
+            this.datetime = LocalDate.parse(datetime);
+    }
 
     public Long getDatetimeEpoch() { return datetimeEpoch; }
 
@@ -258,6 +266,9 @@ public class WeatherDailyData {
     public ArrayList<String> getStations() { return stations; }
 
     public void setStations(ArrayList<String> stations) { this.stations = stations; }
+
+    public ArrayList<Event> getEvents() {return events; }
+    public void setEvents(ArrayList<Event> events) { this.events = events; }
 
     public String getSource() { return source; }
 

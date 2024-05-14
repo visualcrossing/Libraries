@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 /**
  * The WeatherHourlyData class represents hourly weather data. It encapsulates all relevant meteorological details
@@ -5,7 +7,7 @@ import java.util.ArrayList;
  * pressure, visibility, cloudcover, solarradiation, solarenergy, uvindex, conditions, icon, stations, and source for a specific hour.
  */
 public class WeatherHourlyData {
-    private String datetime;
+    private LocalTime datetime;
     private Long datetimeEpoch;
     private Double temp;
     private Double feelslike;
@@ -34,13 +36,18 @@ public class WeatherHourlyData {
     public WeatherHourlyData() {}
 
     // Getters and Setters
-    public String getDatetime() { return datetime; }
+    public LocalTime getDatetime() { return datetime; }
 
-    public void setDatetime(String datetime) { this.datetime = datetime; }
+    public void setDatetime(String datetime) {
+        if (datetime == null)
+            this.datetime = null;
+        else
+            this.datetime = LocalTime.parse(datetime);
+    }
 
     public long getDatetimeEpoch() { return datetimeEpoch; }
 
-    public void setDatetimeEpoch(long datetimeEpoch) { this.datetimeEpoch = datetimeEpoch; }
+    public void setDatetimeEpoch(Long datetimeEpoch) { this.datetimeEpoch = datetimeEpoch; }
 
     public Double getTemp() { return temp; }
 

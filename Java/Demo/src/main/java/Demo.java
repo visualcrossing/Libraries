@@ -6,13 +6,11 @@ public class Demo {
     public static void main(String[] args) {
 
         // create weather API object with API key
-        WeatherAPI weatherAPI = new WeatherAPI("YOUR_API_KEY");
+        WeatherData weatherData = new WeatherData("YOUR_API_KEY");
 
         // fetch weather data with location, from date, to date params.
-        weatherAPI.fetchWeatherData("K2A1W1","2021-10-19","2021-11-19");
 
-        // get weather data object
-        WeatherData weatherData = weatherAPI.getWeatherData();
+        weatherData.fetchWeatherData("38.96%2C-96.02","2020-7-10","2020-7-12","us","events","");
 
         // get daily weather data array list
         ArrayList<WeatherDailyData> weatherDailyData = weatherData.getWeatherDailyData();
@@ -30,24 +28,33 @@ public class Demo {
 
                 // get hourly weather data array list
                 ArrayList<WeatherHourlyData> weatherHourlyData = dailyData.getHourlyData();
-                for (WeatherHourlyData hourlyData : weatherHourlyData) {
-                    // print temperature
-                    System.out.println(hourlyData.getDatetime() + "," + hourlyData.getTemp());
+                if (weatherHourlyData != null) {
+                    for (WeatherHourlyData hourlyData : weatherHourlyData) {
+                        // print temperature
+                        System.out.println(hourlyData.getDatetime() + "," + hourlyData.getTemp());
 
-                    // print humidity
-                    System.out.println(hourlyData.getDatetime() + "," + hourlyData.getHumidity());
+                        // print humidity
+                        System.out.println(hourlyData.getDatetime() + "," + hourlyData.getHumidity());
+                    }
+                }
+
+                ArrayList<Event> events = dailyData.getEvents();
+                if (events != null) {
+                    for (Event event : events) {
+                        System.out.println(event.getDatetime() + "," + event.getDatetimeEpoch());
+                    }
                 }
             }
         }
 
+
         // set API_KEY
-        weatherAPI.setAPI_KEY("YOUR_API_KEY");
+        weatherData.setAPI_KEY("YOUR_API_KEY");
 
         // fetch weather data for a specific datetime
-        weatherAPI.fetchWeatherData("K2A1W1","2021-10-19");
+        weatherData.fetchWeatherData("K2A1W1","2021-10-19");
 
-        // get weather data object
-        weatherData = weatherAPI.getWeatherData();
+        // get daily weather data object
         ArrayList<WeatherDailyData> weatherDailyData1 = weatherData.getWeatherDailyData();
 
         if (weatherDailyData1 != null) {
@@ -58,10 +65,7 @@ public class Demo {
         }
 
         // fetch forecast (15 days) weather data for the location
-        weatherAPI.fetchForecastData("K2A1W1");
-
-        // get weather data object
-        weatherData = weatherAPI.getWeatherData();
+        weatherData.fetchForecastData("K2A1W1");
 
         // get daily weather data array list
         ArrayList<WeatherDailyData> weatherDailyData2 = weatherData.getWeatherDailyData();
@@ -72,5 +76,8 @@ public class Demo {
                 System.out.println(dailyData.getDatetime() + "," + dailyData.getTempMax());
             }
         }
+
+        WeatherData weatherData1 = new WeatherData();
+        weatherData1.setAPI_KEY("YOUR_API_KEY");
     }
 }
