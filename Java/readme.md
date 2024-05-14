@@ -12,10 +12,10 @@ Visual Crossing Weather offers the most user-friendly and cost-effective solutio
 
 Our comprehensive weather data serves a wide array of clients daily, ranging from business analysts and data scientists to insurance experts, energy producers, construction planners, and academic researchers.
 
-These Java library simplify the process of accessing weather data from [Visual Crossing Weather API](https://www.visualcrossing.com/weather-api). Users can effortlessly retrieve weather information without needing to understand the specifics of API requests. By utilizing predefined methods, you can easily fetch weather data and extract particular parameters from the responses.
+This Java library simplifies the process of accessing weather data from [Visual Crossing Weather API](https://www.visualcrossing.com/weather-api). Users can effortlessly retrieve weather information without needing to understand the specifics of API requests. By utilizing predefined methods, you can easily fetch weather data and extract particular parameters from the responses.
 
 ## Using the Library
-Efficiently harness the capabilities of these Java library to access weather data from the Visual Crossing Weather API. The process involves two simple steps:
+Efficiently harness the capabilities of this Java library to access weather data from the Visual Crossing Weather API. The process involves two simple steps:
 * **Data Fetching**: Begin by invoking the `fetchWeatherData` method from the `WeatherData` class to retrieve and store weather data from the API.
 * **Data Retrieval**: Subsequently, use methods like `getWeatherDailyData` from the `WeatherData` class to extract specific parameters from the previously fetched data.
 
@@ -62,7 +62,7 @@ This Java library is designed to simplify interactions with the Visual Crossing 
 To start using the library, clone the repository and refer to the `Demo` class for examples of how to use the library to fetch and display weather data. Ensure that your development environment is configured to include all necessary dependencies as specified in the library documentation.
 
 ### Additional Resources
-- **Detailed API Documentation**: For more detailed information about each method and class, refer to the [`documentation.md`](/Documentation/documentation.md) file in the [Documentation] folder.
+- **Detailed API Documentation**: For more detailed information about each method and class, refer to the [`documentation.md`](./Documentation/documentation.md) file in the [Documentation] folder.
 
 ## Contact
 
