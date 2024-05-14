@@ -15,7 +15,7 @@ import java.util.Objects;
 /**
  * The WeatherData class is designed to interact with the Visual Crossing Weather API to fetch weather data for specific locations, dates, and times.
  * This class is equipped to handle various types of weather data requests, including current weather data, historical weather data, and weather forecasts.
- * The key functionalities of this class include constructing API requests, retrieving weather data, and parsing JSON responses to populate weather data models.
+ * The key methodalities of this class include constructing API requests, retrieving weather data, and parsing JSON responses to populate weather data models.
  * API_KEY: A private string variable that stores the API key required to authenticate requests to the Visual Crossing Weather API.
  * setAPI_KEY(String API_KEY) and getAPI_KEY(): Getters and setters for the API key, allowing it to be updated or retrieved after the instance has been created.
  * fetchWeatherData(String location, String from, String to): Public method to fetch weather data between specific dates for a given location. This is particularly useful for retrieving historical weather data or future forecasts within a defined range.
@@ -48,7 +48,7 @@ public class WeatherData{
     public String getAPI_KEY() { return API_KEY;}
 
     /**
-     * The fetchData function retrieves weather data by making an API request to the specified URL using the weather data API.
+     * The fetchData method retrieves weather data by making an API request to the specified URL using the weather data API.
      * @param URL
      * @return
      */
@@ -103,7 +103,7 @@ public class WeatherData{
         weatherDailyData.clear();
     }
     /**
-     * The handleWeatherDate function parse JSON structure from String.
+     * The handleWeatherDate method parse JSON structure from String.
      * @param jsonString
      */
     private void handleWeatherDate(String jsonString){
@@ -152,7 +152,7 @@ public class WeatherData{
     }
 
     /**
-     * The fetchWeatherData function will fetch weather data from params.
+     * The fetchWeatherData method will fetch weather data from params.
      * @param location
      * location param is the address, partial address or latitude,longitude location for which to retrieve weather data.
      * You can also use US ZIP Codes. If you would like to submit multiple locations in the same request,
@@ -203,7 +203,7 @@ public class WeatherData{
     }
 
     /**
-     * The fetchWeatherData function will fetch weather data from first date to second date.
+     * The fetchWeatherData method will fetch weather data from first date to second date.
      * @param location : String
      * location param is the address, partial address or latitude,longitude location for which to retrieve weather data.
      * You can also use US ZIP Codes. If you would like to submit multiple locations in the same request,
@@ -235,7 +235,7 @@ public class WeatherData{
     }
 
     /**
-     * The fetchWeatherData function will fetch weather data for a specific datetime.
+     * The fetchWeatherData method will fetch weather data for a specific datetime.
      * @param location : String
      * location param is the address, partial address or latitude,longitude location for which to retrieve weather data.
      * You can also use US ZIP Codes. If you would like to submit multiple locations in the same request,
@@ -264,7 +264,7 @@ public class WeatherData{
     }
 
     /**
-     * The fetchForecastData function will fetch the weather forecast for location for the next 15 days
+     * The fetchForecastData method will fetch the weather forecast for location for the next 15 days
      * starting at midnight at the start of the current day (local time of the requested location).
      * @param location: String
      * location param is the address, partial address or latitude,longitude location for which to retrieve weather data.
@@ -322,8 +322,8 @@ public class WeatherData{
     }
 
     /**
-     * The createWeatherDailyData function creates an hourly data object from a JSON object.
-     * The function checks if a key in the JSON object is null and sets the corresponding property to null if it is.
+     * The createWeatherDailyData method creates an hourly data object from a JSON object.
+     * The method checks if a key in the JSON object is null and sets the corresponding property to null if it is.
      * Otherwise, it assigns the value from the JSON object to the property.
      */
     private WeatherDailyData createWeatherDailyData(JSONObject day) {
