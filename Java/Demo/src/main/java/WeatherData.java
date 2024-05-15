@@ -431,7 +431,7 @@ public class WeatherData{
      * The method checks if a key in the JSON object is null and sets the corresponding property to null if it is.
      * Otherwise, it assigns the value from the JSON object to the property.
      */
-    public WeatherHourlyData createHourlyData(JSONObject hour) {
+    private WeatherHourlyData createHourlyData(JSONObject hour) {
         WeatherHourlyData weatherHourlyData = new WeatherHourlyData();
 
         weatherHourlyData.setDatetime(getStringOrNull(hour,"datetime"));
