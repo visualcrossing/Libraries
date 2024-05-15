@@ -16,7 +16,7 @@ Here, we will give the detailed documentation to use the Java libraries to acces
        - **Returns**: void
        - **Example**:
          ```java
-         WeatherData weatherData = new WeatherData();
+         WeatherData weatherData = new WeatherData("YOUR_API_KEY");
          weatherData.fetchWeatherData("38.95,-95.664", "2023-01-01", "2023-01-07", "metric", "days,hours");
          ```
      - **`getWeatherDailyData()`**: Retrieves the daily weather data.

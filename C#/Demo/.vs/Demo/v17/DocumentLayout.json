@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|f:\\work\\weather data project\\c# library\\demo\\demo\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|solutionrelative:demo\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|f:\\work\\weather data project\\c# library\\demo\\demo\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|solutionrelative:demo\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|f:\\work\\weather data project\\c# library\\demo\\demo\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|solutionrelative:demo\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|f:\\work\\weather data project\\c# library\\demo\\demo\\weatherdailydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|solutionrelative:demo\\weatherdailydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|f:\\work\\weather data project\\c# library\\demo\\demo\\weatherhourlydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|solutionrelative:demo\\weatherhourlydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|f:\\work\\weather data project\\c# library\\demo\\demo\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{868940A7-FAA3-4392-BD8D-160C23D60F81}|Demo\\Demo.csproj|solutionrelative:demo\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherData.cs",
+              "DocumentMoniker": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\WeatherData.cs",
+              "RelativeDocumentMoniker": "Demo\\WeatherData.cs",
+              "ToolTip": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\WeatherData.cs",
+              "RelativeToolTip": "Demo\\WeatherData.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAjwJoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:54:35.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherHourlyData.cs",
+              "DocumentMoniker": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\WeatherHourlyData.cs",
+              "RelativeDocumentMoniker": "Demo\\WeatherHourlyData.cs",
+              "ToolTip": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\WeatherHourlyData.cs",
+              "RelativeToolTip": "Demo\\WeatherHourlyData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwEoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:52:30.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherDailyData.cs",
+              "DocumentMoniker": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\WeatherDailyData.cs",
+              "RelativeDocumentMoniker": "Demo\\WeatherDailyData.cs",
+              "ToolTip": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\WeatherDailyData.cs",
+              "RelativeToolTip": "Demo\\WeatherDailyData.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAMwGIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:47:51.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Station.cs",
+              "DocumentMoniker": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\Station.cs",
+              "RelativeDocumentMoniker": "Demo\\Station.cs",
+              "ToolTip": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\Station.cs",
+              "RelativeToolTip": "Demo\\Station.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:44:17.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Event.cs",
+              "DocumentMoniker": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\Event.cs",
+              "RelativeDocumentMoniker": "Demo\\Event.cs",
+              "ToolTip": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\Event.cs",
+              "RelativeToolTip": "Demo\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T08:36:04.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Demo.cs",
+              "DocumentMoniker": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\Demo.cs",
+              "RelativeDocumentMoniker": "Demo\\Demo.cs",
+              "ToolTip": "F:\\Work\\Weather Data Project\\C# Library\\Demo\\Demo\\Demo.cs",
+              "RelativeToolTip": "Demo\\Demo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T19:43:04.883Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
