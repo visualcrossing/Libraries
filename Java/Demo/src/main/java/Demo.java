@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -46,6 +47,15 @@ public class Demo {
                 }
             }
         }
+
+        HashMap<String, Station> stationHashMap = weatherData.getStations();
+        stationHashMap.keySet().forEach(key -> {
+            Station station = stationHashMap.get(key);
+            System.out.println(key);
+            System.out.println(station.getName());
+            System.out.println(station.getDistance());
+            System.out.println(station.getDistance());
+        });
 
 
         // set API_KEY
