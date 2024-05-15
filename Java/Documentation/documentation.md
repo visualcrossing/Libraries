@@ -32,8 +32,28 @@ Here, we will give the detailed documentation to use the Java libraries to acces
      - Getters and setters for each weather attribute such as temperature, humidity, etc.
    - **Example**:
      ```java
-     WeatherDailyData dailyData = weatherData.getWeatherDailyData();
-     System.out.println("Max Temperature: " + dailyData.getMaxTemperature());
+      // create weather API object with API key
+      WeatherData weatherData = new WeatherData("YOUR_API_KEY");
+
+      // fetch weather data with location, from date, to date params.
+
+      weatherData.fetchWeatherData("38.96%2C-96.02","2020-7-10","2020-7-12","us","events","");
+
+      // get daily weather data array list
+      ArrayList<WeatherDailyData> weatherDailyData = weatherData.getWeatherDailyData();
+
+      if (weatherDailyData != null) {
+          for (WeatherDailyData dailyData : weatherDailyData) {
+              // print max temperature
+              System.out.println(dailyData.getDatetime() + "," + dailyData.getTempMax());
+
+              // print min temperature
+              System.out.println(dailyData.getDatetime() + "," + dailyData.getTempMin());
+
+              // print humidity
+              System.out.println(dailyData.getDatetime() + "," + dailyData.getHumidity());
+          }          
+      }
      ```
 
 #### 3. **WeatherHourlyData Class**
@@ -44,8 +64,32 @@ Here, we will give the detailed documentation to use the Java libraries to acces
      - Getters and setters for each weather attribute.
    - **Example**:
      ```java
-     WeatherHourlyData hourlyData = weatherData.getWeatherHourlyData();
-     System.out.println("Temperature at 10 AM: " + hourlyData.getTemperature(10));
+      // create weather API object with API key
+      WeatherData weatherData = new WeatherData("YOUR_API_KEY");
+
+      // fetch weather data with location, from date, to date params.
+
+      weatherData.fetchWeatherData("38.96%2C-96.02","2020-7-10","2020-7-12","us","events","");
+
+      // get daily weather data array list
+      ArrayList<WeatherDailyData> weatherDailyData = weatherData.getWeatherDailyData();
+
+      if (weatherDailyData != null) {
+          for (WeatherDailyData dailyData : weatherDailyData) {              
+
+              // get hourly weather data array list
+              ArrayList<WeatherHourlyData> weatherHourlyData = dailyData.getHourlyData();
+              if (weatherHourlyData != null) {
+                  for (WeatherHourlyData hourlyData : weatherHourlyData) {
+                      // print temperature
+                      System.out.println(hourlyData.getDatetime() + "," + hourlyData.getTemp());
+
+                      // print humidity
+                      System.out.println(hourlyData.getDatetime() + "," + hourlyData.getHumidity());
+                  }
+              }
+          }
+        }
      ```
 
 #### 4. **Event Class**
@@ -56,10 +100,27 @@ Here, we will give the detailed documentation to use the Java libraries to acces
      - Getters and setters for event details.
    - **Example**:
      ```java
-     Event event = new Event();
-     event.setType("Tornado");
-     event.setDescription("A severe tornado hit the area.");
-     System.out.println("Event Type: " + event.getType());
+      // create weather API object with API key
+      WeatherData weatherData = new WeatherData("YOUR_API_KEY");
+
+      // fetch weather data with location, from date, to date params.
+
+      weatherData.fetchWeatherData("38.96%2C-96.02","2020-7-10","2020-7-12","us","events","");
+
+      // get daily weather data array list
+      ArrayList<WeatherDailyData> weatherDailyData = weatherData.getWeatherDailyData();
+
+      if (weatherDailyData != null) {
+          for (WeatherDailyData dailyData : weatherDailyData) {
+              // get event list              
+              ArrayList<Event> events = dailyData.getEvents();
+              if (events != null) {
+                  for (Event event : events) {
+                      System.out.println(event.getDatetime() + "," + event.getDatetimeEpoch());
+                  }
+              }
+          }
+        }
      ```
 
 #### 5. **Station Class**
@@ -70,9 +131,20 @@ Here, we will give the detailed documentation to use the Java libraries to acces
      - Getters and setters for station attributes.
    - **Example**:
      ```java
-     Station station = new Station();
-     station.setName("Topeka Forbes Field");
-     System.out.println("Station Name: " + station.getName());
+      // create weather API object with API key
+      WeatherData weatherData = new WeatherData("YOUR_API_KEY");
+
+      // fetch weather data with location, from date, to date params.
+      weatherData.fetchWeatherData("38.96%2C-96.02","2020-7-10","2020-7-12","us","events","");
+
+      HashMap<String, Station> stationHashMap = weatherData.getStations();
+      stationHashMap.keySet().forEach(key -> {
+        Station station = stationHashMap.get(key);
+        System.out.println(key);
+        System.out.println(station.getName());
+        System.out.println(station.getDistance());
+        System.out.println(station.getDistance());
+      });
      ```
 
 ### Conclusion
