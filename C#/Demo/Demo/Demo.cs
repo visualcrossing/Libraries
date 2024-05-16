@@ -13,7 +13,7 @@ namespace Demo
         {
 
             // create weather API object with API key
-            WeatherData weatherData = new WeatherData("3KAJKHWT3UEMRQWF2ABKVVVZE");
+            WeatherData weatherData = new WeatherData("YOUR_API_KEY");
 
             // fetch weather data with location, from date, to date params.
 
@@ -78,7 +78,7 @@ namespace Demo
             WeatherData weatherData1 = new WeatherData();
 
             // Set API_KEY
-            weatherData1.APIKey = "3KAJKHWT3UEMRQWF2ABKVVVZE";
+            weatherData1.APIKey = "YOUR_API_KEY";
 
             // Fetch weather data for a specific datetime
             weatherData1.FetchWeatherData("K2A1W1", "2021-10-19");
@@ -112,7 +112,7 @@ namespace Demo
 
             // Create another instance of WeatherData
             WeatherData weatherData2 = new WeatherData();
-            weatherData2.APIKey = "3KAJKHWT3UEMRQWF2ABKVVVZE";
+            weatherData2.APIKey = "YOUR_API_KEY";
 
         }
     }
