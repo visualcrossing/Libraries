@@ -7,7 +7,8 @@ setup(
     description='A efficient and easy-to-use weather data fetching from weather API and processing package',
     author='VisualCrossing team',
     # author_email='your.email@example.com',
-    url='https://github.com/yourusername/my_package',
+    readme = "README.md",
+    url='https://github.com/visualcrossing/libraries/tree/main/Python',
     install_requires=[
         'requests',  # Ensure you list all necessary packages here
     ],
