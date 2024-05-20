@@ -1,0 +1,11 @@
+{
+  "name": "weather-visual",
+  "version": "1.0.0",
+  "description": "The weather library to acccess weather data from VisualCrossing API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Visual Crossing team",
+  "license": "MIT"
+}
