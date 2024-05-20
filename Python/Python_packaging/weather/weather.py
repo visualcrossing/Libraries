@@ -3068,7 +3068,7 @@ class Weather:
 # Example usage of the extended class
 
 if __name__ == "__main__":
-    weather = Weather(api_key='3KAJKHWT3UEMRQWF2ABKVVVZE')
+    weather = Weather(api_key='Your API Key')
     # fetch from the Visual Crossing API
     weather.fetch_weather_data("38.95,-95.664", "2023-01-01", '2023-01-02', include='hours')
 

@@ -55,16 +55,16 @@ This Python library is designed to simplify interactions with the Visual Crossin
      -  `get_daily_datetimes` for daily datetime, and `get_hourly_datetimes` for hourly datetime.
 
 5. **Additional Functions**
-   - **Purpose**: Make managing and processing the weatehr data more easier.
+   - **Purpose**: Make managing and processing the weathesr data more easier.
    - **Key Methods**:
      - `update_dictionary`, `is_valid_dict`, `extract_subdict_by_keys`.
 
 #### Demos
-- **Location**: Demos can be found in the `Demo` folder within the repository.
+- **Location**: Demos can be found in the `Demos` folder within the repository.
 - **Description**: Each demo illustrates the usage of the `Weather` class, showcasing how to initiate data fetch operations and subsequently access both daily and hourly data.
 
 ### Getting Started
-To start using the library, clone the repository and refer to the `Demo` folder for examples of how to use the library to fetch and display weather data. Ensure that your development environment is configured to include all necessary dependencies as specified in the library documentation.
+To start using the library, clone the repository and refer to the `Demos` folder for examples of how to use the library to fetch and display weather data. Ensure that your development environment is configured to include all necessary dependencies as specified in the library documentation.
 
 ### Additional Resources
 - **Detailed API Documentation**: For more detailed information about each method and class, refer to the [`documentation.md`](./Documentation/documentation.md) file in the [Documentation] folder.

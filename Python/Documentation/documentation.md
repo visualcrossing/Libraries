@@ -11,7 +11,7 @@ Here, we will give the detailed documentation to use the Python libraries to acc
      - __weather_data (dict): Internal storage for weather data.
    - **Usage**:
      - **`fetch_weather_data(self, location, from_date='', to_date='', unit_group='metric', include='days', elements='')`: Fetches weather data for a specified location and date range.
-     If the unit_group is not specified, it will fetch the data based on metric system. If only location paramter is given, it will fetch the next 15 days forecasting weather data
+     If the unit_group is not specified, it will fetch the data based on US system. If only location paramter is given, it will fetch the next 15 days forecasting weather data
        - **Parameters**:
          - `location`(str): Address or latitude-longitude of the desired location.
          - `from`(str): Start date in `yyyy-MM-dd` format.
