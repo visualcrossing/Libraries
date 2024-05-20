@@ -1,0 +1,3 @@
+E:\Work\Weather\Weather\x64\Debug\libcurl-d.dll
+E:\Work\Weather\Weather\x64\Debug\zlibd1.dll
+E:\Work\Weather\Weather\Weather\x64\Debug\Weather.vcxproj.Up2Date
