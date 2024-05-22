@@ -1,4 +1,4 @@
-# Java Library To Access Weather Data from VisaulCrossing API
+# Java Library To Access Weather Data from Visual Crossing Weather API
 
 ## Table of Contents
 * [Introduction](#introduction)
