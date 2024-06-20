@@ -50,7 +50,7 @@ for (key, station) in stations {
 let weatherData1 = WeatherData()
 
 // Set API_KEY
-weatherData1.APIKey = "3KAJKHWT3UEMRQWF2ABKVVVZE"
+weatherData1.APIKey = "YOUR_API_KEY"
 
 // Fetch weather data for a specific datetime
 weatherData1.fetchWeatherData(location: "K2A1W1", datetime: "2021-10-19")
@@ -76,4 +76,4 @@ for dailyData in weatherDailyData2 {
 
 // Create another instance of WeatherData
 let weatherData2 = WeatherData()
-weatherData2.APIKey = "3KAJKHWT3UEMRQWF2ABKVVVZE"
+weatherData2.APIKey = "YOUR_API_KEY"
