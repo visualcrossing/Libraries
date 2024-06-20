@@ -31,8 +31,8 @@ This Swift library is designed to simplify interactions with the Visual Crossing
    - **Purpose**: Serves as the central class for managing weather data. It encapsulates all related weather parameters, storing JSON responses from the Weather API, and provides functions to retrieve and manipulate this data.
    - **Key functions**:
      - `fetchWeatherData(location: String, from: String, to: String, unitGroup: String, include: String, elements: String)`: Fetches weather data based on specified parameters.
-     - `WeatherDailyData`: Retrieves daily weather data encapsulated within the instance.
-     - `WeatherHourlyData`: Retrieves hourly weather data.
+     - `_WeatherDailyData`: Retrieves daily weather data encapsulated within the instance.
+     - `_WeatherHourlyData`: Retrieves hourly weather data.
 
 2. **WeatherDailyData**
    - **Purpose**: Manages daily weather data specifics, allowing detailed day-by-day weather analysis.
