@@ -35,7 +35,7 @@ Here, we will give the detailed documentation to use the Swift libraries to acce
      - Getters and setters for each weather attribute such as temperature, humidity, etc.
    - **Example**:
      ```Swift
-      / Create weather API object with API key
+      // Create weather API object with API key
       let weatherData = WeatherData(apiKey: "YOUR_API_KEY")
 
       // Fetch weather data with location, from date, to date params
@@ -53,7 +53,7 @@ Here, we will give the detailed documentation to use the Swift libraries to acce
      - Getters and setters for each weather attribute.
    - **Example**:
      ```Swift
-      / Create weather API object with API key
+      // Create weather API object with API key
       let weatherData = WeatherData(apiKey: "YOUR_API_KEY")
 
       // Fetch weather data with location, from date, to date params
@@ -84,7 +84,7 @@ Here, we will give the detailed documentation to use the Swift libraries to acce
      - Getters and setters for event details.
    - **Example**:
      ```Swift
-      / Create weather API object with API key
+      // Create weather API object with API key
       let weatherData = WeatherData(apiKey: "YOUR_API_KEY")
 
       // Fetch weather data with location, from date, to date params
