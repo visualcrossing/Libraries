@@ -1,0 +1,24 @@
+{
+    "name": "visualcrossing/weathervisual",
+    "description": "A PHP package for handling and visualizing weather data",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "WeatherVisual\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "authors": [
+        {
+            "name": "visualcrossing",
+            "email": "milos.milic001@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

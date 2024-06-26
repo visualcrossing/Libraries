@@ -1,0 +1,13 @@
+use ExtUtils::MakeMaker;
+
+WriteMakefile(
+    NAME         => 'WeatherVisual',
+    VERSION_FROM => 'lib/WeatherVisual.pm',
+    AUTHOR       => 'visualcrossing <milos.milic001@outlook.com>',
+    ABSTRACT     => 'A simple module to fetch and manipulate weather data from the Visual Crossing Weather API',
+    PREREQ_PM    => {
+        'LWP::UserAgent'      => 0,
+        'JSON'                => 0,
+        'DateTime::Format::Strptime' => 0,
+    },
+);
