@@ -1,4 +1,4 @@
-# JavaScript Library To Access Weather Data from VisaulCrossing API
+# JavaScript Library To Access Weather Data from Visual Crossing Weather API
 
 ## Table of Contents
 * [Introduction](#introduction)
