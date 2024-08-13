@@ -1,4 +1,4 @@
-# Swift Library To Access Weather Data from VisaulCrossing API
+# Swift Library To Access Weather Data from Visual Crossing Weather API
 
 ## Table of Contents
 * [Introduction](#introduction)
