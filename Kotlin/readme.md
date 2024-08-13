@@ -1,4 +1,4 @@
-# Kotlin Library To Access Weather Data from VisaulCrossing API
+# Kotlin Library To Access Weather Data from Visual Crossing Weather API
 
 ## Table of Contents
 * [Introduction](#introduction)
