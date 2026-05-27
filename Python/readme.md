@@ -76,4 +76,4 @@ This Python library is an open initiative that relies on volunteers who are moti
 
 
 ## License
-[GNU GPL](LICENSE.txt)
+This library is licensed under the [MIT License](LICENSE).
