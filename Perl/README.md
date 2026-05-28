@@ -18,3 +18,7 @@ Use `Makefile.PL` to install the module
     make test
     make install
     ```
+
+## License
+
+This library is licensed under the [MIT License](LICENSE).
