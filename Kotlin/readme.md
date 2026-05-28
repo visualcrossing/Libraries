@@ -68,4 +68,4 @@ To start using the library, clone the repository and refer to the `Main.kt` file
 
 
 ## License
-[GNU GPL](LICENSE.txt)
+This library is licensed under the [MIT License](LICENSE).
