@@ -64,3 +64,7 @@ temp = weather.get_temp_at_datetime(day_index, hour_index)
 weather.clear_weather_data
 cleared_data = weather.get_weather_data
 ```
+
+## License
+
+This library is licensed under the [MIT License](LICENSE).
