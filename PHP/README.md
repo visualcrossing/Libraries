@@ -115,3 +115,7 @@ or
 ```bash
 php test_weather_data.php
 ```
+
+## License
+
+This library is licensed under the [MIT License](LICENSE).
