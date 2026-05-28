@@ -62,4 +62,4 @@ To start using the package, clone the repository and refer to the `Demo` folder 
 
 
 ## License
-[GNU GPL](LICENSE.txt)
+This library is licensed under the [MIT License](LICENSE).
